@@ -21,7 +21,7 @@ public class CardTester {
                                                     card2.getFaceName(), card2.getFaceValue());
         
         //this should throw an exception
-        Card card3 = new Card("ace","JDub");
+        Card card3 = new Card("ace","hearts");
         System.out.printf("card3:  suit: %s   face name: %-5s  value: %d %n", card3.getSuit(), 
                                                     card3.getFaceName(), card3.getFaceValue());
         

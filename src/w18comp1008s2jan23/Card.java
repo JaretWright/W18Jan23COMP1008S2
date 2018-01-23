@@ -22,7 +22,15 @@ public class Card {
     }
 
     public void setFaceName(String faceName) {
-        this.faceName = faceName;
+        for(String validFaceName : faceNames)
+        {
+            if (validFaceName.equalsIgnoreCase(faceName))
+            {
+                this.faceName = faceName;
+                return;
+            }
+        }
+        throw new IllegalArgumentException("Valid face names are 2-10, Jack Queen and King");
     }
 
     public String getSuit() {
