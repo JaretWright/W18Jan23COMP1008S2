@@ -1,5 +1,6 @@
 package w18comp1008s2jan23;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -25,6 +26,9 @@ public class CardTester {
         System.out.printf("card3:  suit: %s   face name: %-5s  value: %d %n", card3.getSuit(), 
                                                     card3.getFaceName(), card3.getFaceValue());
         
+        DeckOfCards myDeck = new DeckOfCards();
+        myDeck.displayDeck();
+            
         
         
     }

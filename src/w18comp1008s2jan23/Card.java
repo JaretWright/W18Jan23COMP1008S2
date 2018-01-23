@@ -70,5 +70,10 @@ public class Card {
         throw new IllegalArgumentException("face name of card is invalid");
     }
     
+    @Override
+    public String toString()
+    {
+        return faceName + " of " + suit;
+    }
     
 }
